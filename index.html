@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&family=Nunito&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Weeb Cycles Signup</title>
 </head>
 
 <body>
     <div class="colLeft">
-        <div class="odinBanner">
+        <!-- <div class="odinBanner">
             <p>Odin</p>
+        </div> -->
+    <div class="creditContainer">
+        <div class="credit">Photo by <a href="https://unsplash.com/@fl__q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Taiki Ishikawa</a> on <a href="https://unsplash.com/t/street-photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
         </div>
-
+    </div>
     </div>
     <div class="colRight">
         <div class="header">
@@ -27,25 +34,25 @@
             <form class="formContainer">
                 <div class="formColumn">
                     <label for="fname">first name</label><br>
-                    <input type="text" id="fName" name="fname"><br>
+                    <input type="text" placeholder='John' id="fName" name="fname" required><br>
                     <label for="fname">email</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <label for="pass">password</label><br>
-                    <input type="password" id="password" name="password" minlength="8" required>
+                    <input type="text" placeholder='JohnSmith@yahoo.com' id="email" name="email" required><br>
+                    <label for="pass" type="password">password</label><br>
+                    <input type="password" minlength='8' id="password" name="password" minlength="8" required>
                 </div>
 
                 <div class="formColumn">
                     <label for="lname">last name</label><br>
-                    <input type="text" id="lName" name="lname"><br>
+                    <input type="text" placeholder='Smith' id="lName" name="lname" required><br>
                     <label for="lname">phone number</label><br>
-                    <input type="text" id="phone" name="phone"><br>
-                    <label for="passwordConfirm">confirm password</label><br>
-                    <input name="passwordConfirm" required="required" type="password" id="passwordConfirm">
+                    <input type="text" placeholder='555-555-5555'id="phone" name="phone" required><br>
+                    <label for="passwordConfirm" type="password">confirm password</label><br>
+                    <input name="passwordConfirm" minlength='8' type="password" id="passwordConfirm" required>
                 </div>
 
             </form>
         <div class="loginContainer">
-            <btn>Create Account</btn>
+            <input value="Submit" type='submit'>Create Account</input>
             <div>Already have an account? Log in</div>
         </div>
 

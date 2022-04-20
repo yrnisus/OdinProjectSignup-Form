@@ -1,5 +1,11 @@
 html {
+font-family: 'Nunito', sans-serif;
+}
 
+* {box-sizing:border-box;}
+
+a {
+    color: antiquewhite;
 }
 
 body {
@@ -12,11 +18,11 @@ body {
 }
 
 .colLeft {
-    background-image: url(./images/pexels-angelica-reyn-11183928.jpg);
+    background-image: url(./images/taiki-ishikawa-PdGdU9zMkRY-unsplash.jpg);
     height: auto;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 
@@ -31,43 +37,90 @@ body {
     align-items: center;
 }
 
+.creditContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
 .odinBanner p {
     color: #fff;
     font-size: 88px;
 }
 
+.credit {
+    position: absolute;
+    bottom: 10px;
+    color: antiquewhite;
+}
+
 .colRight {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
 
 .header { 
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 5%;
 }
 
 .formContainer {
-    margin-top: 5%;
+    color: #000;
+    height: 300px;
+    background-color: #EAEBEA;
     width: 100%;
     display: flex;
     padding-bottom: 10px;
-    border-bottom: 3px solid lightgray;
+    border-top: 1px solid #949A95;
+    border-bottom: 3px solid #949A95;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .formColumn {
-    width: 350px;
+    font-family: 'Anybody', cursive;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 425px;
     margin-left: 5%;
 }
 
-input {
-    width: 300px;
+.formColumn input {
+    font-size: 18px;
+    border: 1px solid #080E13;
+    width: 400px;
+    height: 35px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    padding: 5px;
 }
 
 .loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     margin-left: 5%;
-    margin-top: 5%;
+    gap: 20px;
 }
 
-input:active {
-    color: blue;
+.loginContainer input {
+    color: #fff;
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #080E13;
+    background-color: #415C62;
+}
+
+.loginContainer input:hover {
+    background-color: #2A3B3F;
+}
+
+
+
+
+.formColumn input:focus {
+    outline: none;
+    border: 1px solid #CD9758;
+    filter: drop-shadow(0 0 0.25rem #CD9758);
 }
