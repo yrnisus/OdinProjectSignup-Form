@@ -1,0 +1,81 @@
+html {
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+}
+
+.colLeft {
+    background-image: url(./images/pexels-angelica-reyn-11183928.jpg);
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.odinBanner {
+    margin-top: 30%;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: .4;
+}
+
+.colRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+}
+
+.formColumn {
+    width: 50%;
+    float: left;
+}
+
+.formLeft {
+    border: 1px solid blue;
+}
+/* 
+.header {
+    grid-area: header;
+}
+
+#fName {
+    grid-area: fName;
+}
+
+#lName {
+    grid-area: lName;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#email {
+    grid-area: email;
+}
+
+#password {
+    grid-area: password;
+}
+
+#passwordConfirm {
+    grid-area: confirm;
+}
+
+.loginContainer {
+    grid-area: signup;
+} */
