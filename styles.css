@@ -25,7 +25,15 @@ body {
     width: 100%;
     height: 200px;
     background-color: black;
-    opacity: .4;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odinBanner p {
+    color: #fff;
+    font-size: 88px;
 }
 
 .colRight {
@@ -33,49 +41,33 @@ body {
     flex-direction: column;
 }
 
+.header { 
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
 .formContainer {
+    margin-top: 5%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    border: 1px solid blue;
+    padding-bottom: 10px;
+    border-bottom: 3px solid lightgray;
 }
 
 .formColumn {
-    width: 50%;
-    float: left;
+    width: 350px;
+    margin-left: 5%;
 }
 
-.formLeft {
-    border: 1px solid blue;
-}
-/* 
-.header {
-    grid-area: header;
-}
-
-#fName {
-    grid-area: fName;
-}
-
-#lName {
-    grid-area: lName;
-}
-
-#phone {
-    grid-area: phone;
-}
-
-#email {
-    grid-area: email;
-}
-
-#password {
-    grid-area: password;
-}
-
-#passwordConfirm {
-    grid-area: confirm;
+input {
+    width: 300px;
 }
 
 .loginContainer {
-    grid-area: signup;
-} */
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+input:active {
+    color: blue;
+}
